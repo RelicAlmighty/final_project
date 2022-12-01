@@ -1,0 +1,59 @@
+@media screen and (max-width: 1000px) {
+    .contain {
+        width: 100%;
+    }
+
+   .menu {
+    display: none;
+   }
+
+   .main-body {
+    width: 95%;
+   }
+
+   .header {
+    text-align: center;
+   }
+
+   h2 {
+    text-align: center;
+   }
+   .up-top {
+    display: none;
+   }
+}
+
+@media screen and (min-width: 1001px) {
+    .upper-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width:280px) {
+    li a{
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (width: 912px) {
+    .upper-menu li a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (width: 820px) {
+    .upper-menu li a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (width: 768px) {
+    .upper-menu {
+        font-size: 1.4em;
+    }
+}
+
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+}

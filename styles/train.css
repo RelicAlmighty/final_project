@@ -1,0 +1,33 @@
+table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+div.main-body {
+    background-color: bisque;
+    padding: 5px;
+    border: 3px inset darkred;
+}
+
+table.train {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+table.main-body td, th {
+    padding: 5px;
+    border: 1px solid darkred;
+}
+
+table.train td, th {
+    padding: 5px;
+    border: 1px solid darkred;
+    text-align: center;
+}
+
+.span {
+    background-color: black;
+    border: 2px solid darkred;
+    color: white;
+}

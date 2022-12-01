@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/web.css">
+    <link rel="stylesheet" href="styles/survey.css">
+    <link rel="stylesheet" href="styles/phone.css">
+    <title>Method Meister</title>
+    <style>
+        textarea{
+            display: block;
+            margin: 4px auto 4px auto;
+            padding: 5%;
+            width: 50%;
+            border-radius: 20px 20px 20px 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Please Fill Out This Quick Survey</h1>
+        <form  method="post" action="https://formsubmit.co/tomlardy680@gmail.com">
+        <fieldset>
+            <legend>Typical Information</legend>
+            <label for="firstName">First Name</label>
+            <input type="text" class="name-info" required id="firstName" placeholder="John" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="name-info" id="lastName" placeholder="Doe" name="lastName">
+        </fieldset>
+        <fieldset>
+            <legend>Would you like to subscribe to Method Meister?</legend>
+            <div class="radio">
+                <label for="yes">Yes</label>
+                <input type="radio" name="yes" id="yes" value="yes">
+            </div>
+            <div class="radio">
+                <label for="no">No</label>
+                <input type="radio" name="no" id="no" value="no">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Typical Email Stuff</legend>
+            <label for="email">Your Email (We won't hack you)</label>
+            <input type="email" class="email" required id="email" placeholder="example1@gmail.com" name="email">
+            <label for="email">Second Email (Optional)</label>
+            <input type="email" class="email" id="sec-email" placeholder="example2@gmail.com" name="sec-email">
+        </fieldset>
+        <fieldset>
+            <legend>Feedback and More!</legend>
+            <div class="more">
+                <label for="more">Please leave a comment or some constructive feedback!</label>
+                <textarea name="more" id="more" cols="15" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <input type="submit">
+        </fieldset>
+    </form>
+     </div>
+</body>
+
+</html>

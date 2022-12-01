@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: black;
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/id/1290560310/photo/kids-training-on-karate-do-banner-with-space-for-text-for-web-pages-or-advertising-printing.jpg?b=1&s=170667a&w=0&k=20&c=lbqPMg-fF2Dw5gUJ9KOpM4RAdkf758BgfUj047aIzUE=");
+    background-color: darkgray;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    margin: 4px auto 4px auto;
+    border: 3px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.contain {
+    width: 75%;
+    padding: 6px;
+    margin: auto;
+    border: 6px outset rgb(102, 3, 3);
+    background-image: linear-gradient(to right, bisque, beige, beige, bisque);
+}
+
+.upper-menu {
+    width: 100%;
+    background-color: #D22D16;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    text-align: center;
+}
+
+li a{
+    display: block;
+    padding-right: 1.7em;
+    text-decoration: none;
+    color: white;
+    background-color: #D22D16;
+    text-align: center;
+    font-size: 0.7em;
+    position: relative;
+    transition: all ease-in-out 300ms;
+}
+
+li a:hover {
+    color: white;
+    font-style: italic;
+}
+
+li a:hover:after {
+    width: 100%;
+
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: var(--primary-color);
+    bottom: -0.5em;
+    transition: all ease-in-out 500ms;
+}
+
+.menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+}
+
+nav {
+    background-color: #D22D16;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    text-align: center;
+
+}
+
+.menu a {
+    width: 100%;
+    padding: 3px;
+    margin: 3px 4px;
+    background-color: #D22D16;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all ease-in-out 500ms;
+}
+
+.menu a:hover {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.menu a:hover:after{
+    width: 100%;
+}
+
+.menu a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: var(--primary-color);
+    bottom: -0.5em;
+    transition: all ease-in-out 500ms;
+}
+
+.main-body {
+    display: block;
+    width: 60%;
+    padding: 4px;
+    margin: 5px auto 5px auto;
+}
+
+.main-body > p {
+    text-indent: 5%;
+}
+
+.main-body > p::first-letter {
+    font-size: 1.5em;
+    font-style: oblique;
+}
+
+.main-body > h2 {
+    text-align: center;
+}
+
+.main-body > a:first-child:visited {
+    color: #D22D16;
+}
+
+.image {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.belts {
+    filter: brightness(100%);
+    transition: all 500ms ease-in-out;
+}
+
+img.belts:hover {
+    filter: brightness(120%);
+    scale: 115%;
+}
+
+.Me {
+    display: block;
+    width: 50%;
+    margin: 3px auto;
+}
+
+img.Me {
+    transition: all 300ms ease;
+}
+
+img.Me:hover {
+    scale: 115%;
+    transform: rotate(25deg);
+}
+
+.wtf {
+    display: block;
+    width: 80%;
+    margin: 3px auto;
+}
+
+img.wtf {
+    transition: all 500ms ease-out;
+}
+
+img.wtf:hover {
+    filter: brightness(140%);
+    scale: 150%;
+    rotate: 360deg;
+}
+
+.belts {
+    display: block;
+    width: 80%;
+    margin: 3px auto;
+}
+
+.black-belt {
+    display: block;
+    width: 60%;
+    margin: 3px auto;
+}
+
+img.black-belt {
+    transition: all 300ms ease-in;
+}
+
+img.black-belt:hover {
+    filter: brightness(130%);
+    box-shadow: 3px 4px rgba(0, 0, 0, .2);
+    scale: 115%;
+}
+
+figcaption {
+    text-align: center;
+    color: brown;
+}
+
+.black-belt {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-body p a {
+    color: crimson;
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    height: 0;
+}
+
+.frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .2);
+}
+
+video {
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.up-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to right, bisque, beige, bisque);
+    bottom: 10%;
+    right: 5%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-size: 1.3em;
+    opacity: 100%;
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    margin: 4px auto 4px auto;
+    background-color: black;
+    color: white;
+    border: 5px inset rgb(102, 3, 3);
+}
